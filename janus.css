@@ -43,7 +43,7 @@
 .janus-table .janus-track {
   height: 8px !important;
   width: 100%;
-  background: rgba(128,128,128,.2);
+  background: #8F865E;
   border-radius: 3px;
   overflow: hidden;
   margin: 0 !important;
@@ -57,11 +57,11 @@
 }
 
 .janus-table .janus-positive {
-  background: #b99a66;
+  background: #D47345;
 }
 
 .janus-table .janus-negative {
-  background: #985768;
+  background: #E2E8A7;
 }
 
 .janus-table .janus-points {
