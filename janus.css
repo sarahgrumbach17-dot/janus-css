@@ -56,3 +56,23 @@
     gap: 7px;
   }
 }
+
+/* Espacement compact des groupes */
+
+.janus-table .janus-row {
+  padding: 2px 0 !important;
+  margin: 0 !important;
+  gap: 10px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.janus-table .janus-points {
+  margin-top: 2px !important;
+  margin-bottom: 0 !important;
+  line-height: 1.1;
+}
+
+.janus-table .janus-track {
+  height: 7px;
+}
