@@ -71,3 +71,18 @@
   padding: 0 !important;
   opacity: .75;
 }
+
+
+.janus-table .janus-row {
+  border: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+.janus-table .janus-row::before,
+.janus-table .janus-row::after {
+  content: none !important;
+  display: none !important;
+}
+
