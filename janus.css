@@ -1,0 +1,62 @@
+
+/* LES BALANCES DE JANUS */
+
+.janus-table {
+  width: 100%;
+  max-width: 650px;
+  margin: 20px auto;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.janus-row {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(128,128,128,.2);
+}
+
+.janus-header {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.janus-name {
+  font-weight: bold;
+}
+
+.janus-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(128,128,128,.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.janus-fill {
+  height: 100%;
+}
+
+.janus-positive {
+  background: #b99a66;
+}
+
+.janus-negative {
+  background: #985768;
+}
+
+.janus-points {
+  margin-top: 5px;
+  font-size: 11px;
+  opacity: .75;
+}
+
+@media (max-width: 480px) {
+  .janus-row {
+    grid-template-columns: 75px minmax(0, 1fr) minmax(0, 1fr);
+    gap: 7px;
+  }
+}
