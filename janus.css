@@ -1,5 +1,9 @@
 
-/* JANUS - JAUGES */
+/* ==========================
+   JANUS — JAUGES DES GROUPES
+   ========================== */
+
+/* Conteneur général */
 
 .janus-table {
   width: 100%;
@@ -8,20 +12,28 @@
   padding: 0 !important;
   font-family: inherit;
   font-size: 12px;
+  border: none !important;
+  box-shadow: none !important;
 }
+
+/* Lignes des groupes */
 
 .janus-table .janus-row {
   display: grid !important;
-  grid-template-columns: 110px minmax(0,1fr) minmax(0,1fr);
+  grid-template-columns: 110px minmax(0, 1fr) minmax(0, 1fr);
   align-items: center !important;
   gap: 12px !important;
   padding: 5px 0 !important;
   margin: 0 !important;
-  border: 0 !important;
-  border-bottom: 0 !important;
-  box-shadow: none !important;
   min-height: 0 !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
 }
+
+/* Suppression des séparateurs éventuels */
 
 .janus-table .janus-row::before,
 .janus-table .janus-row::after {
@@ -29,64 +41,76 @@
   display: none !important;
 }
 
+/* Éléments des lignes */
+
 .janus-table .janus-row > div {
   margin: 0 !important;
   padding: 0 !important;
-  border: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
   min-height: 0 !important;
 }
+
+/* Noms des groupes */
 
 .janus-table .janus-name {
   font-weight: bold;
 }
 
+/* Fond neutre des jauges */
+
 .janus-table .janus-track {
-  height: 8px !important;
   width: 100%;
+  height: 8px !important;
   background: #8F865E;
   border-radius: 3px;
   overflow: hidden;
   margin: 0 !important;
   padding: 0 !important;
+  border: none !important;
 }
+
+/* Remplissage des jauges */
 
 .janus-table .janus-fill {
   height: 100%;
   margin: 0 !important;
   padding: 0 !important;
+  border: none !important;
 }
+
+/* Faveurs — orange */
 
 .janus-table .janus-positive {
   background: #D47345;
 }
 
+/* Disgrâces — jaune pâle */
+
 .janus-table .janus-negative {
   background: #E2E8A7;
 }
+
+/* Affichage des points */
 
 .janus-table .janus-points {
   font-size: 11px;
   line-height: 14px !important;
   margin: 3px 0 0 !important;
   padding: 0 !important;
-  opacity: .75;
+  opacity: 0.75;
+  border: none !important;
 }
 
+/* Adaptation aux petits écrans */
 
+@media (max-width: 480px) {
+  .janus-table .janus-row {
+    grid-template-columns: 75px minmax(0, 1fr) minmax(0, 1fr);
+    gap: 7px !important;
+  }
 
-.janus-table,
-.janus-table .janus-row,
-.janus-table .janus-row > div {
-  border: 0 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
-  box-shadow: none !important;
-  background-image: none !important;
+  .janus-table {
+    font-size: 11px;
+  }
 }
-
-.janus-table .janus-row::before,
-.janus-table .janus-row::after {
-  content: none !important;
-  display: none !important;
-}
-
