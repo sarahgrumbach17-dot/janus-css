@@ -73,11 +73,15 @@
 }
 
 
-.janus-table .janus-row {
-  border: none !important;
-  border-bottom: none !important;
-  border-top: none !important;
+
+.janus-table,
+.janus-table .janus-row,
+.janus-table .janus-row > div {
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
   box-shadow: none !important;
+  background-image: none !important;
 }
 
 .janus-table .janus-row::before,
