@@ -54,7 +54,7 @@
   flex: 1 1 0;
   min-width: 0;
   height: 9px !important;
-  background: #8F865E;
+  background: #625B54;
   border-radius: 3px;
   overflow: hidden;
   margin: 0 !important;
@@ -80,7 +80,7 @@
 }
 
 .janus-table .janus-neutral {
-  background: #8C8580;
+  background: #A77C60;
 }
 
 /* Score à droite */
@@ -118,4 +118,28 @@
   .janus-table .janus-points {
     flex-basis: 48px;
   }
+}
+/* JANUS — CORRECTIONS */
+
+/* Fond des jauges */
+.janus-table .janus-track {
+  background: #8F865E !important;
+}
+
+/* Jauges et événements neutres */
+.janus-table .janus-neutral {
+  background: #A77C60 !important;
+}
+
+/* Supprimer les séparateurs */
+.janus-table .janus-row {
+  border: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.janus-table .janus-row + .janus-row {
+  border-top: 0 !important;
 }
