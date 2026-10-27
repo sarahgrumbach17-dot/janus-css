@@ -1,5 +1,7 @@
 
-/* JANUS — JAUGES HORIZONTALES */
+/* ==========================================
+   JANUS — JAUGES HORIZONTALES
+   ========================================== */
 
 .janus-table {
   width: 100%;
@@ -20,9 +22,14 @@
   gap: 12px !important;
   padding: 4px 0 !important;
   margin: 0 !important;
-  border: none !important;
+  border: 0 !important;
+  outline: none !important;
   box-shadow: none !important;
   min-height: 0 !important;
+}
+
+.janus-table .janus-row + .janus-row {
+  border-top: 0 !important;
 }
 
 .janus-table .janus-row::before,
@@ -48,13 +55,13 @@
   opacity: .65;
 }
 
-/* Fond neutre */
+/* Fond des barres */
 
 .janus-table .janus-track {
   flex: 1 1 0;
   min-width: 0;
   height: 9px !important;
-  background: #C5B69D;
+  background: #C5B69D !important;
   border-radius: 3px;
   overflow: hidden;
   margin: 0 !important;
@@ -62,7 +69,7 @@
   border: none !important;
 }
 
-/* Remplissage */
+/* Remplissage des jauges */
 
 .janus-table .janus-fill {
   height: 100%;
@@ -71,16 +78,22 @@
   border: none !important;
 }
 
+/* Positif — olive */
+
 .janus-table .janus-positive {
-  background: #77844B;
+  background: #77844B !important;
 }
+
+/* Négatif — vermillon */
 
 .janus-table .janus-negative {
-  background: #C35443;
+  background: #C35443 !important;
 }
 
+/* Neutre — taupe caramel */
+
 .janus-table .janus-neutral {
-  background: #A77C60;
+  background: #A77C60 !important;
 }
 
 /* Score à droite */
@@ -104,7 +117,7 @@
   box-shadow: none !important;
 }
 
-/* Mobile */
+/* Version mobile */
 
 @media (max-width: 480px) {
   .janus-table .janus-row {
@@ -118,28 +131,4 @@
   .janus-table .janus-points {
     flex-basis: 48px;
   }
-}
-/* JANUS — CORRECTIONS */
-
-/* Fond des jauges */
-.janus-table .janus-track {
-  background: #C5B69D !important;
-}
-
-/* Jauges et événements neutres */
-.janus-table .janus-neutral {
-  background: #A77C60 !important;
-}
-
-/* Supprimer les séparateurs */
-.janus-table .janus-row {
-  border: 0 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.janus-table .janus-row + .janus-row {
-  border-top: 0 !important;
 }
