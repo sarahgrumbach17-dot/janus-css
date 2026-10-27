@@ -72,15 +72,15 @@
 }
 
 .janus-table .janus-positive {
-  background: #D47345;
+  background: #77844B;
 }
 
 .janus-table .janus-negative {
-  background: #E2E8A7;
+  background: #C35443;
 }
 
 .janus-table .janus-neutral {
-  background: #F1BF69;
+  background: #8C8580;
 }
 
 /* Score à droite */
